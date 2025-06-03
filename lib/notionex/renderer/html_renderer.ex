@@ -164,12 +164,10 @@ defmodule Notionex.Renderer.HTMLRenderer do
   end
 
   def render_block(%Block{object: "block", type: "link_preview"} = block, _opts) do
-    raise inspect(block)
     ""
   end
 
-  def render_block(%Block{object: "block", type: "file"} = block, _opts) do
-    raise inspect(block)
+  def render_block(%Block{object: "block", type: "file"}, _opts) do
     ""
   end
 
