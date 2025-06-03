@@ -172,7 +172,7 @@ defmodule Notionex.Renderer.HTMLRenderer do
   end
 
   def render_block(%Block{object: "block", type: type}, _opts) do
-    raise "Block type not implemented: #{type}"
+    raise "*sad* Block type not implemented: #{type}"
   end
 
   @impl true
