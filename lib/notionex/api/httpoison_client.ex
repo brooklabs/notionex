@@ -10,7 +10,8 @@ defmodule Notionex.API.HTTPoisonClient do
       url: request.url,
       body: request.body,
       headers: request.headers,
-      params: request.params
+      params: request.params,
+      options: [timeout: 60_000, recv_timeout: 60_000]
     }
     |> do_request()
     |> case do
